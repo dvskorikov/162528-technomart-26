@@ -86,11 +86,6 @@
   </header>
 
   <main>
-    <!-- TODO верстать фильтр с диапазоном цен -->
-    <!-- TODO верстать сортировку -->
-    <!-- TODO верстать пагинатор -->
-    <!-- TODO верстать описание раздела каталога -->
-
     <section class="catalog-navigation">
       <ul class="breadcrumbs-list">
         <li class="breadcrumbs-list-item">
@@ -114,7 +109,26 @@
 
     <section class="filter-section">
       <h2>Фильтр:</h2>
+      <!-- TODO верстать фильтр с диапазоном цен -->
+
       <!-- TODO реализовать форму для фильтрации -->
+    </section>
+
+    <section class="filter-sort-section">
+      <h2>Сортировка:</h2>
+      <ul class="filter-sort-list">
+        <li class="filter-sort-item filter-sort-item-current">
+          <a>По цене</a>
+        </li>
+        <li class="filter-sort-item">
+          <a href="#">По типу</a>
+        </li>
+        <li class="filter-sort-item">
+          <a href="#">По функционалу</a>
+        </li>
+      </ul>
+      <button class="filter-sort-btn-ascending" type="button"></button>
+      <button class="filter-sort-btn-descending" type="button"></button>
     </section>
 
     <section class="catalog-section">
@@ -360,6 +374,29 @@
           </div>
         </li>
       </ul>
+
+      <div class="catalog-paginator-block">
+        <ul class="catalog-paginator-list">
+          <li class="catalog-paginator-item catalog-paginator-item-current">
+            <a href="#">1</a>
+          </li>
+          <li class="catalog-paginator-item">
+            <a href="#">2</a>
+          </li>
+          <li class="catalog-paginator-item">
+            <a href="#">3</a>
+          </li>
+        </ul>
+        <a class="catalog-paginator-item catalog-paginator-next-lnk" href="#">Следующая</a>
+      </div>
+    </section>
+
+    <section class="catalog-description-section">
+      <h2>Пара слов о перфораторах</h2>
+      <p>
+        Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.
+        Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
+      </p>
     </section>
   </main>
 
