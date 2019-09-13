@@ -14,7 +14,16 @@
         <a>
           <img src="img/header-logo.png" alt="Логотип компании Техномарт." width="220" height="47"/>
         </a>
-        <!-- TODO реализовать форму поиска -->
+
+        <form action="https://echo.htmlacademy.ru" method="post">
+          <button type="submit">
+            <img src="img/icon-search.svg" alt="Поиск" width="17" height="17"/>
+          </button>
+          <label>
+            Поиск:
+            <input class="header-search-field" type="text" name="search-field" id="search-field">
+          </label>
+        </form>
 
         <a href="#">
           <img src="img/icon-bookmark.svg" alt="Количество закладок" width="14" height="16"/>
@@ -420,9 +429,22 @@
     </footer>
 
     <section class="popup-write-us">
-      <button type="button" aria-label="закрыть форму"></button>
-      <!-- TODO верстать форму обратной связи -->
-      <button class="popup-btn" type="button">Отправить</button>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <button type="button" aria-label="закрыть форму"></button>
+        <label>
+          Ваше имя
+          <input type="text" name="customer-name" placeholder="Имя Фамилия">
+        </label>
+        <label>
+          Ваш e-mail:
+          <input type="text" name="customer-email" placeholder="Имя Фамилия">
+        </label>
+        <label>
+          Текст письма:
+          <textarea type="text" name="customer-request">В свободной форме</textarea>
+        </label>
+        <button class="popup-btn" type="submit">Отправить</button>
+      </form>
     </section>
   </body>
 </html>
