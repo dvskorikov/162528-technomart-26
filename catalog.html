@@ -119,9 +119,57 @@
 
     <section class="filter-section">
       <h2>Фильтр:</h2>
-      <!-- TODO верстать фильтр с диапазоном цен -->
 
-      <!-- TODO реализовать форму для фильтрации -->
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <fieldset>
+          <legend>Цена:</legend>
+          <!-- TODO реализовать фильтр с диапазоном цен -->
+          <input type="number" name="filter-min-price" id="min-price" value="0" min="0" max="1000000">
+          <input type="number" name="filter-max-price" id="max-price" value="30000" min="0" max="1000000">
+        </fieldset>
+
+        <fieldset>
+          <legend>Производители:</legend>
+          <ul>
+            <li>
+              <input type="checkbox" name="filter-brand-bosch" id="brand-bosch" checked>
+              <label for="brand-bosch">Bosch</label>
+            </li>
+            <li>
+              <input type="checkbox" name="filter-brand-interskol" id="brand-interskol">
+              <label for="brand-interskol">Интерскол</label>
+            </li>
+            <li>
+              <input type="checkbox" name="filter-brand-makita" id="brand-makita" checked>
+              <label for="brand-makita">Makita</label>
+            </li>
+            <li>
+              <input type="checkbox" name="filter-brand-dewalt" id="brand-dewalt">
+              <label for="brand-dewalt">Dewalt</label>
+            </li>
+            <li>
+              <input type="checkbox" name="filter-brand-hitachi" id="brand-hitachi">
+              <label for="brand-hitachi">Hitachi</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <fieldset>
+          <legend>Питание:</legend>
+          <ul>
+            <li>
+              <input type="radio" name="filter-power-radiogroup" value="filter-power-acc" id="filter-power-acc" checked>
+              <label for="filter-power-acc">Аккумуляторные</label>
+            </li>
+            <li>
+              <input type="radio" name="filter-power-radiogroup" value="filter-power-mains" id="filter-power-mains">
+              <label for="filter-power-mains">Сетевые</label>
+            </li>
+          </ul>
+        </fieldset>
+
+        <button type="submit">Показать</button>
+      </form>
     </section>
 
     <section class="filter-sort-section">
