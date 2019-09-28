@@ -436,7 +436,6 @@ a {
 .footer-catalog-qlinks-list,
 .footer-social-links-list {
   padding: 0;
-  /* margin: 0; */
 
   list-style: none;
   font-size: 18px;
@@ -449,8 +448,6 @@ a {
 
 .footer-catalog-qlinks-list a {
   padding: 0;
-  /* padding: 0 5px; */
-  /* padding-left: 55px; */
 
   color: #ffd180;
 }
@@ -776,22 +773,37 @@ a {
 
 .main-page-promo-block-bg1 {
   background-color: #ffbf47;
+  background-image: url(../img/icon-1.svg);
+  background-repeat: no-repeat;
+  background-position: 213px 31px;
 }
 
 .main-page-promo-block-bg2 {
   background-color: #3bbce3;
+  background-image: url(../img/icon-2.svg);
+  background-repeat: no-repeat;
+  background-position: 197px 33px;
 }
 
 .main-page-promo-block-bg3 {
   background-color: #dc91d8;
+  background-image: url(../img/icon-3.svg);
+  background-repeat: no-repeat;
+  background-position: 191px 31px;
 }
 
 .main-page-promo-block-bg4 {
   background-color: #8ed78f;
+  background-image: url(../img/icon-4.svg);
+  background-repeat: no-repeat;
+  background-position: 196px 25px;
 }
 
 .main-page-promo-block-bg5 {
   background-color: #ffc047;
+  background-image: url(../img/icon-5.svg);
+  background-repeat: no-repeat;
+  background-position: 191px 32px;
 }
 
 .main-page-promo-lnk {
@@ -1219,7 +1231,6 @@ a {
   display: flex;
   flex-basis: 548px;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
   justify-content: flex-start;
   align-content: center;
   margin: 0;
@@ -1247,10 +1258,8 @@ a {
 
 .container .footer-catalog-qlinks-list {
   display: flex;
-  /* flex-basis: 565px; */
   flex-basis: 526px;
   flex-wrap: wrap;
-  /* justify-content: space-between; */
   justify-content: flex-start;
 }
 
@@ -1651,20 +1660,12 @@ p.old-price {
 }
 
 .main-page-promo-block {
-  position: relative;
-
   display: flex;
   flex-shrink: 0;
   flex-direction: column;
   width: 300px;
   height: 123px;
   margin-bottom: 10px;
-}
-
-.main-page-promo-block img {
-  position: absolute;
-  top: 30px;
-  left: 200px;
 }
 
 .main-page-promo-block span {
@@ -1732,6 +1733,9 @@ p.old-price {
   height: 40px;
   margin: 0;
   padding: 0;
+
+  background: none;
+  border: none;
 }
 
 .slider-switch-btn:first-of-type {
@@ -1746,31 +1750,6 @@ p.old-price {
 
 .main-page-promo-block > .label-new-item {
   margin-left: 240px;
-}
-
-.main-page-promo-column:first-of-type .main-page-promo-block:nth-child(1) img {
-  top: 31px;
-  left: 213px;
-}
-
-.main-page-promo-column:first-of-type .main-page-promo-block:nth-child(2) img {
-  top: 33px;
-  left: 197px;
-}
-
-.main-page-promo-column:last-of-type .main-page-promo-block:nth-child(1) img {
-  top: 31px;
-  left: 191px;
-}
-
-.main-page-promo-column:last-of-type .main-page-promo-block:nth-child(2) img {
-  top: 25px;
-  left: 196px;
-}
-
-.main-page-promo-column:last-of-type .main-page-promo-block:nth-child(3) img {
-  top: 32px;
-  left: 191px;
 }
 
 .main-page-promo-column:last-of-type .main-page-promo-lnk {
@@ -1849,50 +1828,18 @@ p.old-price {
 
 .main-page-popular-brands-item a {
   display: inline-block;
-  width: 219px;
-  height: 144px;
+  width: 218px;
+  /* height: 143px; */
+  height: 139px;
+}
 
-  text-align: center;
+.main-page-popular-brands-item img {
+  display: block;
+  padding-top: 1px;
 }
 
 .main-page-popular-brands-item {
   margin-bottom: 20px;
-}
-
-.main-page-popular-brands-item:nth-child(1) img {
-  margin-top: 52px;
-}
-
-.main-page-popular-brands-item:nth-child(2) img {
-  margin-top: 50px;
-  margin-left: -1px;
-}
-
-.main-page-popular-brands-item:nth-child(3) img {
-  margin-top: 48px;
-}
-
-.main-page-popular-brands-item:nth-child(4) img {
-  margin-top: 21px;
-}
-
-.main-page-popular-brands-item:nth-child(5) img {
-  margin-top: 57px;
-  margin-left: 4px;
-}
-
-.main-page-popular-brands-item:nth-child(6) img {
-  margin-top: 34px;
-  margin-left: -3px;
-}
-
-.main-page-popular-brands-item:nth-child(7) img {
-  margin-top: 22px;
-}
-
-.main-page-popular-brands-item:nth-child(8) img {
-  margin-top: 33px;
-  margin-left: 4px;
 }
 
 .main-page-service-section {
@@ -1901,7 +1848,7 @@ p.old-price {
 }
 
 .main-page-popular-brands-section {
-  margin-bottom: 64px;
+  margin-bottom: 66px;
 }
 
 .main-page-service-section .container {
