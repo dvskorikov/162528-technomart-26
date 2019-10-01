@@ -313,19 +313,25 @@
               Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
             </p>
           </div>
+
+          <input class="slider-radio-btn service-btn-1" type="radio" id="service-btn-1" name="toggle" checked>
+          <input class="slider-radio-btn service-btn-2" type="radio" id="service-btn-2" name="toggle">
+          <input class="slider-radio-btn service-btn-3" type="radio" id="service-btn-3" name="toggle">
+
           <div class="main-page-service-list-bg">
             <ul class="main-page-service-list">
               <li class="main-page-service-list-item">
-                <a href="#">Доставка</a>
+                <label class="slider-label" for="service-btn-1">Доставка</label>
               </li>
               <li class="main-page-service-list-item">
-                <a href="#">Гарантия</a>
+                <label class="slider-label" for="service-btn-2">Гарантия</label>
               </li>
               <li class="main-page-service-list-item">
-                <a href="#">Кредит</a>
+                <label class="slider-label" for="service-btn-3">Кредит</label>
               </li>
             </ul>
           </div>
+
           <div class="main-page-service-slider">
             <div class="main-page-service-slide service-slide1">
               <h3>Доставка</h3>
@@ -488,22 +494,26 @@
     </footer>
 
     <section class="popup-write-us visually-hidden">
-      <form action="https://echo.htmlacademy.ru" method="post">
-        <button type="button" aria-label="закрыть форму"></button>
-        <label>
-          Ваше имя
-          <input type="text" name="customer-name" placeholder="Имя Фамилия">
+      <form class="popup-feedback-form" action="https://echo.htmlacademy.ru" method="post">
+        <button class="popup-close-btn" type="button" aria-label="закрыть форму"  id="popup-feedback-form-close-btn"></button>
+
+        <label for="customer-name">Ваше имя:
+          <input type="text" name="customer-name" id="customer-name" placeholder="Имя Фамилия">
         </label>
-        <label>
-          Ваш e-mail:
-          <input type="text" name="customer-email" placeholder="Имя Фамилия">
+        <label for="customer-email">Ваш e-mail:
+          <input type="text" id="customer-email" name="customer-email" placeholder="email@example.com">
         </label>
-        <label>
-          Текст письма:
-          <textarea name="customer-request">В свободной форме</textarea>
+        <label for="feedback-text">Текст письма:
+          <textarea name="customer-request" placeholder="В свободной форме"></textarea>
         </label>
-        <button class="popup-btn" type="submit">Отправить</button>
+
+        <button class="main-page-body-btn popup-btn" type="submit">Отправить</button>
       </form>
+    </section>
+
+    <section class="popup-map visually-hidden">
+        <button class="popup-close-btn" type="button" aria-label="закрыть форму" id="popup-map-close-btn"></button>
+        <img src="img/map.jpg" width="940" height="446" alt="адрес офиса: самый лучший офис в центре города">
     </section>
   </body>
 </html>
