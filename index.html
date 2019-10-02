@@ -113,7 +113,12 @@
             <a href="#" class="main-page-promo-lnk">На все случаи</a>
           </div>
           <div class="main-page-promo-slider">
-            <img class="main-page-promo-slider-img" src="img/slider1.jpg" alt="Дрели соседям на радость!" width="620" height="266">
+            <input class="promo-slider-radio-btn promo-radio-btn1" id="promo-radio-btn1" type="radio" name="toggle1" checked>
+            <input class="promo-slider-radio-btn promo-radio-btn2" id="promo-radio-btn2" type="radio" name="toggle1">
+            <label for="promo-radio-btn1"></label>
+            <label for="promo-radio-btn2"></label>
+            <img class="main-page-promo-slider-img promo-slide1" src="img/slider1.jpg" alt="Дрели соседям на радость!" width="620" height="266">
+            <img class="main-page-promo-slider-img promo-slide2" src="img/slider2.jpg" alt="Дрели соседям на радость!" width="620" height="266">
             <button class="slider-switch-btn" type="button" >
               <img src="img/icon-left.svg" alt="" width="22" height="40">
             </button>
@@ -314,9 +319,9 @@
             </p>
           </div>
 
-          <input class="slider-radio-btn service-btn-1" type="radio" id="service-btn-1" name="toggle" checked>
-          <input class="slider-radio-btn service-btn-2" type="radio" id="service-btn-2" name="toggle">
-          <input class="slider-radio-btn service-btn-3" type="radio" id="service-btn-3" name="toggle">
+          <input class="slider-radio-btn service-btn-1" type="radio" id="service-btn-1" name="toggle2" checked>
+          <input class="slider-radio-btn service-btn-2" type="radio" id="service-btn-2" name="toggle2">
+          <input class="slider-radio-btn service-btn-3" type="radio" id="service-btn-3" name="toggle2">
 
           <div class="main-page-service-list-bg">
             <ul class="main-page-service-list">
@@ -497,13 +502,13 @@
       <form class="popup-feedback-form" action="https://echo.htmlacademy.ru" method="post">
         <button class="popup-close-btn" type="button" aria-label="закрыть форму"  id="popup-feedback-form-close-btn"></button>
 
-        <label for="customer-name">Ваше имя:
+        <label>Ваше имя:
           <input type="text" name="customer-name" id="customer-name" placeholder="Имя Фамилия">
         </label>
-        <label for="customer-email">Ваш e-mail:
+        <label>Ваш e-mail:
           <input type="text" id="customer-email" name="customer-email" placeholder="email@example.com">
         </label>
-        <label for="feedback-text">Текст письма:
+        <label>Текст письма:
           <textarea name="customer-request" placeholder="В свободной форме"></textarea>
         </label>
 
