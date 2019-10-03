@@ -2167,17 +2167,18 @@ p.old-price {
 
 .filter-list input[type="checkbox"],
 .filter-list input[type="radio"] {
-  position: absolute;
+  /* position: relative; */
+  /* position: absolute;
 
-  cursor: pointer;
+  cursor: pointer; */
 
-  -webkit-appearance: none;
+  /* -webkit-appearance: none;
      -moz-appearance: none;
-          appearance: none;
+          appearance: none; */
 }
 
-.filter-list input[type="checkbox"]::before,
-.filter-list input[type="radio"]::before {
+.filter-input[type="checkbox"] + label::before,
+.filter-input[type="radio"] + label::before {
   content: "";
   position: absolute;
 
@@ -2190,18 +2191,18 @@ p.old-price {
   opacity: 0.7;
 }
 
-.filter-list input[type="checkbox"]:hover::before,
-.filter-list input[type="radio"]:hover::before {
+.filter-input[type="checkbox"] + label:hover::before,
+.filter-input[type="radio"] + label:hover::before {
   opacity: 1;
 }
 
-.filter-list input[type="checkbox"]:disabled::before,
-.filter-list input[type="radio"]:disabled::before {
+.filter-input[type="checkbox"] + label:disabled::before,
+.filter-input[type="radio"] + label:disabled::before {
   cursor: not-allowed;
   opacity: 0.3;
 }
 
-.filter-list input[type="radio"]::before {
+.filter-input[type="radio"] + label::before {
   width: 37px;
   height: 25px;
   margin-top: -2px;
@@ -2210,11 +2211,11 @@ p.old-price {
   background-image: url(../img/radio-off.svg);
 }
 
-.filter-list input[type="checkbox"]:checked::before {
+.filter-input[type="checkbox"]:checked + label::before {
   background-image: url(../img/checkbox-on.svg);
 }
 
-.filter-list input[type="radio"]:checked::before {
+.filter-input[type="radio"]:checked + label::before {
   background-image: url(../img/radio-on.svg);
 }
 
