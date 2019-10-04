@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css"/>
-  <link rel="stylesheet" href="css/style.css"/>
+  <!-- <link rel="stylesheet" href="css/style.css"/> -->
+  <link rel="stylesheet" href="css/style-ap.css"/>
   <title>Каталог товаров Техномарт</title>
 </head>
 
@@ -33,7 +34,7 @@
         </a>
 
         <a class="header-lnk cart-with-goods" href="#">
-          <img src="img/icon-cart.svg" alt="Корзина" width="15" height="15"/>
+          <!-- <img src="img/icon-cart.svg" alt="Корзина" width="15" height="15"/> -->
           <span>Корзина: 10</span>
         </a>
 
@@ -109,7 +110,7 @@
     </nav>
   </header>
 
-  <main>
+  <main class="page-main-catalog">
     <section class="catalog-navigation">
       <div class="container">
         <ul class="breadcrumbs-list">
@@ -134,21 +135,30 @@
       </div>
     </section>
 
-    <div class="container-catalog container">
+    <!-- <div class="container-catalog container"> -->
+    <div class="container">
       <section class="filter-section">
         <div>
           <h2 class="h2-filter">Фильтр:</h2>
         </div>
 
         <form class="ctalog-filter-form" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset>
+          <fieldset class="filter-group">
             <legend class="filter-legend">Цена:</legend>
-            <!-- TODO реализовать фильтр с диапазоном цен -->
-            <input type="number" name="filter-min-price" id="min-price" value="0" min="0" max="1000000">
-            <input type="number" name="filter-max-price" id="max-price" value="30000" min="0" max="1000000">
+
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="range-toggle range-toggle-min"></div>
+              <div class="range-toggle range-toggle-max"></div>
+            </div>
+
+            <input type="text" name="filter-min-price" id="min-price" value="0" maxlength="9">
+            <input type="text" name="filter-max-price" id="max-price" value="30000" maxlength="9" >
           </fieldset>
 
-          <fieldset>
+          <fieldset class="filter-group">
             <legend class="filter-legend">Производители:</legend>
             <ul class="filter-list">
               <li>
@@ -174,7 +184,7 @@
             </ul>
           </fieldset>
 
-          <fieldset>
+          <fieldset class="filter-group">
             <legend class="filter-legend">Питание:</legend>
             <ul class="filter-list">
               <li>
@@ -239,7 +249,7 @@
 
               <div class="on-hover-item-action-block">
                 <a class="on-hover-item-lnk on-hover-buy-btn" href="#">
-                  <img src="img/icon-cart.svg" alt="корзина" width="15" height="15">
+                  <!-- <img src="img/icon-cart.svg" alt="корзина" width="15" height="15"> -->
                   <span class="on-hover-item-text-buy">Купить</span>
                 </a>
                 <a class="on-hover-item-lnk on-hover-bookmark-btn" href="#">
@@ -265,7 +275,7 @@
 
               <div class="on-hover-item-action-block">
                 <a class="on-hover-item-lnk on-hover-buy-btn" href="#">
-                  <img src="img/icon-cart.svg" alt="корзина" width="15" height="15">
+                  <!-- <img src="img/icon-cart.svg" alt="корзина" width="15" height="15"> -->
                   <span class="on-hover-item-text-buy">Купить</span>
                 </a>
                 <a class="on-hover-item-lnk on-hover-bookmark-btn" href="#">
@@ -291,7 +301,7 @@
 
               <div class="on-hover-item-action-block">
                 <a class="on-hover-item-lnk on-hover-buy-btn" href="#">
-                  <img src="img/icon-cart.svg" alt="корзина" width="15" height="15">
+                  <!-- <img src="img/icon-cart.svg" alt="корзина" width="15" height="15"> -->
                   <span class="on-hover-item-text-buy">Купить</span>
                 </a>
                 <a class="on-hover-item-lnk on-hover-bookmark-btn" href="#">
@@ -317,7 +327,7 @@
 
               <div class="on-hover-item-action-block">
                 <a class="on-hover-item-lnk on-hover-buy-btn" href="#">
-                  <img src="img/icon-cart.svg" alt="корзина" width="15" height="15">
+                  <!-- <img src="img/icon-cart.svg" alt="корзина" width="15" height="15"> -->
                   <span class="on-hover-item-text-buy">Купить</span>
                 </a>
                 <a class="on-hover-item-lnk on-hover-bookmark-btn" href="#">
@@ -344,7 +354,7 @@
 
               <div class="on-hover-item-action-block">
                 <a class="on-hover-item-lnk on-hover-buy-btn" href="#">
-                  <img src="img/icon-cart.svg" alt="корзина" width="15" height="15">
+                  <!-- <img src="img/icon-cart.svg" alt="корзина" width="15" height="15"> -->
                   <span class="on-hover-item-text-buy">Купить</span>
                 </a>
                 <a class="on-hover-item-lnk on-hover-bookmark-btn" href="#">
@@ -369,7 +379,7 @@
 
               <div class="on-hover-item-action-block">
                 <a class="on-hover-item-lnk on-hover-buy-btn" href="#">
-                  <img src="img/icon-cart.svg" alt="корзина" width="15" height="15">
+                  <!-- <img src="img/icon-cart.svg" alt="корзина" width="15" height="15"> -->
                   <span class="on-hover-item-text-buy">Купить</span>
                 </a>
                 <a class="on-hover-item-lnk on-hover-bookmark-btn" href="#">
@@ -396,7 +406,7 @@
 
               <div class="on-hover-item-action-block">
                 <a class="on-hover-item-lnk on-hover-buy-btn" href="#">
-                  <img src="img/icon-cart.svg" alt="корзина" width="15" height="15">
+                  <!-- <img src="img/icon-cart.svg" alt="корзина" width="15" height="15"> -->
                   <span class="on-hover-item-text-buy">Купить</span>
                 </a>
                 <a class="on-hover-item-lnk on-hover-bookmark-btn" href="#">
@@ -422,7 +432,7 @@
 
               <div class="on-hover-item-action-block">
                 <a class="on-hover-item-lnk on-hover-buy-btn" href="#">
-                  <img src="img/icon-cart.svg" alt="корзина" width="15" height="15">
+                  <!-- <img src="img/icon-cart.svg" alt="корзина" width="15" height="15"> -->
                   <span class="on-hover-item-text-buy">Купить</span>
                 </a>
                 <a class="on-hover-item-lnk on-hover-bookmark-btn" href="#">
@@ -447,7 +457,7 @@
 
               <div class="on-hover-item-action-block">
                 <a class="on-hover-item-lnk on-hover-buy-btn" href="#">
-                  <img src="img/icon-cart.svg" alt="корзина" width="15" height="15">
+                  <!-- <img src="img/icon-cart.svg" alt="корзина" width="15" height="15"> -->
                   <span class="on-hover-item-text-buy">Купить</span>
                 </a>
                 <a class="on-hover-item-lnk on-hover-bookmark-btn" href="#">
@@ -564,19 +574,21 @@
             </li>
           </ul>
 
-          <p class="footer-feedback">
-            Обратная связь:<br>
-            <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-          </p>
-          <p class="footer-email">
-            Разработано —<br>
-            <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
-          </p>
+          <div class="footer-feedback-block">
+            <p class="footer-feedback">
+              Обратная связь:<br>
+              <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            </p>
+            <p class="footer-email">
+              Разработано —<br>
+              <a href="https://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
+            </p>
+          </div>
         </div>
       </section>
     </footer>
 
-  <section class="popup-added-to-shopping-cart  visually-hidden">
+  <section class="popup-added-to-shopping-cart visually-hidden">
     <button class="popup-close-btn" type="button" aria-label="закрыть форму"></button>
     <p>Товар добавлен в корзину!</p>
     <div class="popup-btns">
