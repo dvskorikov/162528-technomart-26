@@ -47,9 +47,9 @@ var rightToggleRadio = document.querySelector("[for=promo-radio-btn2]");
 
 // общие глобальные переменные и запуск функций
 var isLocalStorageSupport = true;
-var isCatalogPage = false;
-
-if (mapIframe) {checkWebMapAvailability();} // проверяем доступность google maps
+if (mapIframe) {
+  checkWebMapAvailability(); // проверяем доступность google maps
+}
 defaultTopMenuValues(); // значения по умолчанию для ссылок в меню
 
 // проверяем доступность localStorage
@@ -202,11 +202,7 @@ if (closeMapBtn) {
 // КАРТОЧКА ТОВАРА
 for (index = 0; index < itemBuyBtns.length; index++) {
   button = itemBuyBtns[index];
-  if (isCatalogPage) {
-    button.addEventListener("click", showBuyDialog)
-  } else {
-    button.addEventListener("click", clickBuyHandler)
-  }
+  button.addEventListener("click", showBuyDialog)
 }
 
 for (index = 0; index < itemBookmarkBtns.length; index++) {
@@ -282,14 +278,12 @@ function closePopupCart() {
 }
 
 function defaultTopMenuValues() {
-  if (window.location.pathname == "/" || window.location.pathname == "/index.html") {
+  if (document.title == "HTML Academy: Техномарт") {
     totalBookmarks = totalCarts = 0;
-    isCatalogPage = false;
     leftToggleRadio.disabled = true; // начальное значение
   } else {
     totalBookmarks = 0;
     totalCarts = 10;
-    isCatalogPage = true;
   }
   console.log("для страницы: " + window.location.pathname + ", totalBookmarks = " + totalBookmarks + ", totalCarts = " + totalCarts);
 }
@@ -399,12 +393,6 @@ function showBuyDialog(event) {
     popupCart.offsetWidth = popupCart.offsetWidth;
     popupCart.classList.add("popup-error-shake")
   }
-}
-
-function clickBuyHandler(event) {
-  event.preventDefault();
-  doBuyAction();
-  console.log("событие click на кнопке: " + this.innerText + "; общее количество в корзине: " + totalCarts);
 }
 
 function clickBookmarkHandler(event) {
