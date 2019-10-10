@@ -49,7 +49,7 @@ var rightToggleRadio = document.querySelector("[for=promo-radio-btn2]");
 var isLocalStorageSupport = true;
 var isCatalogPage = false;
 
-checkWebMapAvailability(); // проверяем доступность google maps
+if (mapIframe) {checkWebMapAvailability();} // проверяем доступность google maps
 defaultTopMenuValues(); // значения по умолчанию для ссылок в меню
 
 // проверяем доступность localStorage
