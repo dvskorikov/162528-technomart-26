@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700%7CPT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css"/>
-    <link rel="stylesheet" href="css/style-ap.css"/>
+    <link rel="stylesheet" href="css/style-ap-min.css"/>
     <title>HTML Academy: Техномарт</title>
   </head>
 
@@ -27,12 +27,12 @@
             </button>
           </form>
 
-          <a class="header-lnk" href="#">
+          <a class="header-lnk bookmark-lnk" href="#">
             <img src="img/icon-bookmark.svg" alt="Количество закладок" width="14" height="16"/>
             Закладки: 0
           </a>
 
-          <a class="header-lnk" href="#">
+          <a class="header-lnk cart-lnk" href="#">
             <img src="img/icon-cart.svg" alt="Корзина" width="15" height="15"/>
             Корзина: 0
           </a>
@@ -118,10 +118,10 @@
             <label for="promo-radio-btn2"></label>
             <img class="main-page-promo-slider-img promo-slide1" src="img/slider1.jpg" alt="Дрели соседям на радость!" width="620" height="266">
             <img class="main-page-promo-slider-img promo-slide2" src="img/slider2.jpg" alt="Дрели соседям на радость!" width="620" height="266">
-            <button class="slider-switch-btn" type="button" >
+            <button class="slider-switch-btn slider-left-btn" type="button" disabled>
               <img src="img/icon-left.svg" alt="" width="22" height="40">
             </button>
-            <button class="slider-switch-btn" type="button" >
+            <button class="slider-switch-btn slider-right-btn" type="button" >
                 <img src="img/icon-right.svg" alt="" width="22" height="40">
             </button>
             <a href="catalog.html" class="main-page-body-btn">Открыть каталог</a>
@@ -394,7 +394,8 @@
               Вы можете забрать товар сами,<br>
               заехав в наш офис:
             </p>
-            <a class="show-map-lnk" href="#">
+            <!-- <a class="show-map-lnk" href="https://goo.gl/maps/8R3kvAuVH2ojqkAQ9"> -->
+            <a class="show-map-lnk" href="img/map.jpg">
               <img src="img/main-map.jpg" alt="посмотрите как нас найти" width="300" height="158">
             </a>
             <a class="main-page-body-btn show-mail-lnk" href="#">
@@ -514,9 +515,10 @@
     </section>
 
     <section class="popup-map visually-hidden">
-        <button class="popup-close-btn" type="button" aria-label="закрыть форму" id="popup-map-close-btn"></button>
-        <img src="img/map.jpg" width="940" height="446" alt="адрес офиса: самый лучший офис в центре города">
+      <button class="popup-close-btn" type="button" aria-label="закрыть форму" id="popup-map-close-btn"></button>
+      <iframe class="popup-map-iframe visually-hidden" id="frame" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.177604727122!2d30.312423303224445!3d59.939307599967414!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1570463980643!5m2!1sru!2sru" width="940" height="446" style="border:0;" allowfullscreen="" ></iframe>
+      <img src="img/map.jpg" width="940" height="446" alt="адрес офиса: самый лучший офис в центре города">
     </section>
-    <script type="text/javascript" src="js/feedback.js"></script>
+    <script src="js/scripts-min.js"></script>
   </body>
 </html>

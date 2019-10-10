@@ -2078,6 +2078,14 @@ p.old-price {
   opacity: 0.7;
 }
 
+.slider-switch-btn:disabled {
+  cursor: default;
+}
+
+.slider-switch-btn:disabled:active {
+  opacity: 1;
+}
+
 .main-page-promo-block > .label-new-item {
   margin-left: 240px;
 }
@@ -2788,6 +2796,7 @@ p.old-price {
   position: absolute;
   top: 9px;
   right: 9px;
+  z-index: 22;
 
   width: 21px;
   height: 21px;
@@ -3072,4 +3081,12 @@ p.old-price {
           animation-duration: 0.7s;
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease;
+}
+
+.popup-map iframe {
+  position: absolute;
+  z-index: 21;
+
+  background-color: transparent;
+  border: none;
 }
