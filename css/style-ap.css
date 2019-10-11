@@ -3085,6 +3085,8 @@ p.old-price {
 
 .popup-map iframe {
   position: absolute;
+  top: 0;
+  left: 0;
   z-index: 21;
 
   background-color: transparent;
